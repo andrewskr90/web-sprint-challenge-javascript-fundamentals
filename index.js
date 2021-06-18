@@ -132,21 +132,24 @@ const zooAnimals = [
   /* 🦁🦁🦁 Step 2: Create several functions to callback with consume(); 🦁🦁🦁 */
  // 🦁🦁🦁 Use add to return the sum of two numbers 🦁🦁🦁
   
- function add(a, b){
-  return a + b;
-}
+//  function add(a, b){
+//   return a + b;
+// }
+const add = (a,b) => a + b;
 
 // 🦁🦁🦁 Use multiply to return the product of two numbers 🦁🦁🦁
   
-function multiply(a, b){
-  return a * b;
- }
+// function multiply(a, b){
+//   return a * b;
+//  }
+const multiply = (a,b) => a * b;
 
  // 🦁🦁🦁 Use greeting to accept a first and last name and return "Hello {first-name} {last-name}, nice to meet you!" 🦁🦁🦁
   
- function greeting(a, b){
-  return `Hello ${a} ${b}, nice to meet you!`
- }
+//  function greeting(a, b){
+//   return `Hello ${a} ${b}, nice to meet you!`;
+//  }
+const greeting = (a,b) => `Hello ${a} ${b}, nice to meet you!`;
   
   // 🦁🦁🦁 Step 3: Check your work by un-commenting the following calls to consume(): 🦁🦁🦁 
   // ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️
@@ -239,10 +242,26 @@ console.log('topic 4',cuboidTwo.volume()); // 100
 console.log('topic 4',cuboidTwo.surfaceArea()); // 130
 
 
-
-
-
 // 🦄 💪 Stretch Task: Extend the base class CuboidMaker with a sub class called CubeMaker.  Find out the formulas for volume and surface area for cubes and create those methods using the dimension properties from CuboidMaker.  Test your work by logging out your volume and surface area. 🦄 💪
+
+// class CubeMaker extends CuboidMaker{
+//   constructor(attr){
+//     super(attr);
+//   }
+//   cubeVolume(){
+//     return this.length**3;
+//   }
+//   cubeSurfaceArea(){
+//     return (this.length**2)*6;
+//   }
+// }
+// const babyCube = new CubeMaker({
+//   length: 3,
+//   width: 3,
+//   height: 3
+// });
+// console.log('stretch',babyCube.cubeVolume());
+// console.log('stretch',babyCube.cubeSurfaceArea());
   
 
 
